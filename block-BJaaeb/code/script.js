@@ -6,6 +6,12 @@ default value to be "text" and return the input element inside label. (create it
 */
 
 // Your code goes here
+function createInputElm(lbl,type="text" ){
+  let text = "";
+
+}
+createInputElm(2,rahul)
+
 
 // TEST
 createInputElm('Your name'); //<label>Your name: <input type="text"></label>
@@ -24,8 +30,8 @@ createInputElm('Your age', 'number'); //<label>Your age: <input type="number"></
 // Your code goes here
 
 // TEST
-createList(['ALABAMA', 'ALASKA', 'HAWAII', 'KENTUCKY']);
-createList(['Afghanistan', 'Antarctica', 'Congo', 'Estonia']);
+// createList(['ALABAMA', 'ALASKA', 'HAWAII', 'KENTUCKY']);
+// createList(['Afghanistan', 'Antarctica', 'Congo', 'Estonia']);
 
 // 4. Create a function named `createTodoList` that accept and array of data like [{name: "Learn DOM", isDone: false}, {name: "Learn JS", isDone: true}] and returns
 // the html for single todo will look like given below
@@ -42,12 +48,12 @@ createList(['Afghanistan', 'Antarctica', 'Congo', 'Estonia']);
 // Your code goes here
 
 // TEST
-createTodoList([
-  { name: 'Learn DOM', isDone: false },
-  { name: 'Learn JS', isDone: true },
-]);
-createTodoList([
-  { name: 'Learn DOM', isDone: false },
-  { name: 'Learn React', isDone: true },
-  { name: 'Learn JS', isDone: true },
-]);
+// createTodoList([
+//   { name: 'Learn DOM', isDone: false },
+//   { name: 'Learn JS', isDone: true },
+// ]);
+// createTodoList([
+//   { name: 'Learn DOM', isDone: false },
+//   { name: 'Learn React', isDone: true },
+//   { name: 'Learn JS', isDone: true },
+// ]);
