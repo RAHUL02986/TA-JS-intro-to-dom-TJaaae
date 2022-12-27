@@ -1,4 +1,4 @@
- {
+ let allBooks = {
  books: [
     {
       isbn: "9781593275846",
@@ -114,7 +114,7 @@
         "A JavaScript pattern and antipattern collection that covers function patterns, jQuery patterns, jQuery plugin patterns, design patterns, general patterns, literals and constructor patterns, object creation patterns, code reuse patterns, DOM and browser patterns",
       website: "https://shichuan.github.io/javascript-patterns/",
     },
-  ];
+  ],
  }
   let ul = document.querySelector("ul");
 books.forEach((char)=>{
