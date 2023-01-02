@@ -1,21 +1,226 @@
-* {
-  box-sizing: border-box;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	line-height: 1;
 }
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custom style */
+
+/*Variables*/
+:root {
+  --primary: #4075d5;
+  --secondary: #f4f5f9;
+  --tertiory: #e7edfd;
+  --darktext: #000000;
+  --lighttext: rgb(130, 130, 130);
+  --xyz: rgb(57, 148, 98);
+}
+
+/*Global*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  background-color: var(--secondary);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-gap: 1rem;
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
-.box {
-  border: 2px solid #d6bcfa;
-  height: 500px;
-  border-radius: 10px;
+
+.padding {
+  padding: 3rem;
 }
-h1,
+
+a {
+  text-decoration: none;
+}
+
+/*Flex*/
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-column {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-20 {
+  flex: 0 1 20%;
+}
+
+.flex-25 {
+  flex: 0 1 25%;
+}
+
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+.flex-32 {
+  flex: 0 1 32%;
+}
+
+.flex-40 {
+  flex: 0 1 40%;
+}
+
+.flex-47 {
+  flex: 0 1 47%;
+}
+
+.flex-50 {
+  flex: 0 1 50%;
+}
+
+.flex-60 {
+  flex: 0 1 60%;
+}
+
+/*Buttons*/
+
+.btn {
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  margin: 1rem auto;
+  outline: none;
+  border: none;
+  width: 30%;
+  background-color: aqua;
+  color: white;
+  font-size: 16px;
+}
+
+.btn-primary {
+  color: var(--primary);
+  background-color: var(--tertiory);
+  text-align: center;
+}
+
+/*Images*/
+
+.font-0 {
+  font-size: 0;
+}
+
+.full-width {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*Position*/
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.fix {
+  position: fixed;
+}
+
+/*Headings*/
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
 h2 {
+  font-size: 1.75rem;
+  margin: 0.5rem auto;
+}
+
+/* Header */
+.header {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+/* Main */
+
+.card {
+  background-color: #ffffff;
+  height: 20rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 0.4rem;
   text-align: center;
 }
